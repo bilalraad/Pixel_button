@@ -7,14 +7,10 @@ void main() {
 }
 
 class MyApp extends StatelessWidget {
-  // This widget is the root of your application.
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'Flutter Demo',
-      theme: ThemeData(
-        primarySwatch: Colors.blue,
-      ),
+      theme: ThemeData(primarySwatch: Colors.blue),
       home: MyHomePage(),
     );
   }
@@ -28,23 +24,8 @@ class MyHomePage extends StatefulWidget {
 }
 
 class _MyHomePageState extends State<MyHomePage> {
-  bool show = true;
-  double h;
-  double w;
-  double strokeWidth;
-  Color buttonColor;
-  @override
-  void initState() {
-    h = 400;
-    w = h * 2;
-    strokeWidth = 4.0;
-    buttonColor = Colors.blue;
-    super.initState();
-  }
-
   @override
   Widget build(BuildContext context) {
-    print('object');
     return Scaffold(
         appBar: AppBar(title: Text('Pixle button')),
         body: Wrap(
